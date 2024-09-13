@@ -8,7 +8,7 @@ export default function About() {
       <header className="text-center mb-5">
         <h1 className="text-4xl font-bold mb-4">About <span className="text-red-500">Me</span></h1>
         <p className="text-lg text-gray-700">
-           Here&apos;s a little bit about who I am and what I'm passionate about.
+           Here&apos;s a little bit about who I am and what I&apos;m passionate about.
         </p>
       </header>
 
