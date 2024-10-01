@@ -33,7 +33,7 @@ export default function contact() {
             <h1 class="text-3xl text-gray-800 font-extrabold text-center">Contact Me</h1>
             <p class="text-center text-gray-600 mt-1">Get in touch with me through the form below. I will get back to you as soon as possible.</p>
 
-            <form ref = {form} onSubmit={sendEmail} class="mt-8 space-y-4">
+            <form InnerRef = {form} onSubmit={sendEmail} class="mt-8 space-y-4">
                 <input name='user_name' type='text' placeholder='Name'
                     class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
                 <input name='user_email' type='email' placeholder='Email'
