@@ -18,7 +18,9 @@ export default function education() {
    
 
       <div>
+        <Link class='text-blue-500' href="/">Home</Link>
         <EducationTimeline />
+
       </div>
 
  
