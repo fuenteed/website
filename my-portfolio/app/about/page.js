@@ -1,14 +1,15 @@
 import '../../app/globals.css';
 import Image from 'next/image';
 
+
 export default function About() {
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
       {/* Header */}
-      <header className="text-center mb-5">
-        <h1 className="text-4xl font-bold mb-4">About <span className="text-red-500">Me</span></h1>
+      <header className="text-center mb-5 text-4xl font-extrabold">
+        <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p className="text-lg text-gray-700">
-           Here&apos;s a little bit about who I am and what I&apos;m passionate about.
+          Here&apos;s a little bit about who I am and what I&apos;m passionate about.
         </p>
       </header>
 
@@ -25,22 +26,160 @@ export default function About() {
       </section>
 
       {/* Skills */}
-      <section className="text-center mb-12 w-full max-w-4xl px-4">
-        <h2 className="text-xl font-semibold mb-4">Technical Skills</h2>
-        <div className="grid grid-cols-4 gap-4 mx-auto">
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C/C++"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker"/>
-          <Image width={80} height={80}className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" alt="Pandas"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="SciKit-Learn"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL"/>
-          <Image width={80} height={80} className="skills mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL"/>
+      <section className="text-center  w-full  px-4 flex grid-cols-3 ">
+
+      <div className="relative m-5 pt-1 w-1/3 ">
+        <h2 className='text-center mb-10 text-2xl font-extrabold'>Languages</h2>
+
+      <div className='mb-5'>
+        <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+          <div style={{width: '80%'}} className="bg-red-700"></div>
         </div>
+        <div className="mb-2 flex items-center justify-between text-sm">
+          <div className="text-gray-600 font-bold">C/C++</div>
+          <div className="text-gray-600">Highly Proficient</div>
+        </div>
+      </div>
+
+
+      <div className='mb-5'>
+        <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+          <div style={{width: '80%'}} className="bg-red-700"></div>
+        </div>
+        <div className="mb-2 flex items-center justify-between text-sm">
+          <div className="text-gray-600 font-bold">Python</div>
+          <div className="text-gray-600">Highly Proficient</div>
+        </div>
+      </div>
+
+      <div className='mb-5'>
+        <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+          <div style={{width: '60%'}} className="bg-red-500"></div>
+        </div>
+        <div className="mb-2 flex items-center justify-between text-sm">
+          <div className="text-gray-600 font-bold">JavaSript</div>
+          <div className="text-gray-600">Proficient</div>
+        </div>
+      </div>
+
+      <div className='mb-5'>
+        <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+          <div style={{width: '30%'}} className="bg-red-400"></div>
+        </div>
+        <div className="mb-2 flex items-center justify-between text-sm">
+          <div className="text-gray-600 font-bold">Rust</div>
+          <div className="text-gray-600">Learning the Fundamentals</div>
+        </div>
+      </div>
+
+
+      </div>
+
+      <div className="relative m-5 pt-1 w-1/3">
+          <h2 className='text-center mb-10 text-2xl font-extrabold'>Frameworks/Libraries</h2>
+
+
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '80%'}} className="bg-red-700"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Node.JS</div>
+            <div className="text-gray-600">Highly Proficient</div>
+          </div>
+        </div>
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '70%'}} className="bg-red-600"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">REST Framework</div>
+            <div className="text-gray-600">Proficient</div>
+          </div>
+        </div>
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '70%'}} className="bg-red-600"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Pandas/Numpy</div>
+            <div className="text-gray-600">Proficient</div>
+          </div>
+        </div>
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '80%'}} className="bg-red-600"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Git/Github</div>
+            <div className="text-gray-600">Highly Proficient</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div className='relative m-5 pt-1 w-1/3'>
+        <h2 className='text-center mb-10 text-2xl font-extrabold'>Concepts</h2>
+        
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '70%'}} className="bg-red-600"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Machine Learning</div>
+            <div className="text-gray-600">Proficient</div>
+          </div>
+        </div>
+
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '90%'}} className="bg-red-800"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Object Oriented Design/Programming</div>
+            <div className="text-gray-600">Highly Proficient</div>
+          </div>
+        </div>
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '70%'}} className="bg-red-600"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Full-Stack development</div>
+            <div className="text-gray-600">Proficient</div>
+          </div>
+        </div>
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '70%'}} className="bg-red-600"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Linear Algebra + Mathematical Stats</div>
+            <div className="text-gray-600">Proficient</div>
+          </div>
+        </div>
+
+        <div className='mb-5'>
+          <div className="mb-2 flex h-2 overflow-hidden rounded bg-gray-100 text-xs">
+            <div style={{width: '60%'}} className="bg-red-500"></div>
+          </div>
+          <div className="mb-2 flex items-center justify-between text-sm">
+            <div className="text-gray-600 font-bold">Parallel Computing/ GPU Computing</div>
+            <div className="text-gray-600">Proficient</div>
+          </div>
+        </div>
+              
+      </div>
+
       </section>
     </main>
   );

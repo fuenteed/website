@@ -11,6 +11,15 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes:{
+        progress: {
+          '0%': { width: '0', opacity: '1' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        progress: 'progress 0.8s ease-in-out forwards',
+      }
     },
   },
   plugins: [],
